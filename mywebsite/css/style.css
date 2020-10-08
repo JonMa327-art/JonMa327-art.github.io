@@ -1,0 +1,230 @@
+body{
+  background-color:#f4f4f4;
+  /*
+  f4f4f4
+  555
+  333
+  0c486c
+  ff9899
+  add8c7
+  8eb2a4
+  fcf7f4
+  edc1da
+  c894b2
+  c76ba0
+  */
+  color:#555;
+  font-family:Helvetica, Arial, sans-serif;
+  font-size:16px;
+  line-height:1.6em;
+  margin:0;
+  padding-bottom: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+}
+
+
+
+/* Navigation Bar style */
+#navbar {
+  background-color: #c894b2;
+  color: #fff;
+  padding: 0;
+  padding-bottom: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#navbar ul {
+  padding:0;
+  list-style: none;
+}
+
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18;
+  padding-right: 15px;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+/* Navigation Bar style */
+
+
+
+/* Home page title style Computer Size*/
+@media (min-width: 700px){
+  .title {
+    background-color: #c894b2;
+    color: white;
+    padding: 5% 10%;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+
+  .title-container {
+    flex-basis: 40%;
+    align-self: center;
+  }
+
+  .title-container h1 {
+    line-height: .1em;
+  }
+
+  .title-container img {
+    border: 2px solid #555;
+    border-style:hidden;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+}
+/* Home page title style Computer Size*/
+
+
+/* Home page title style Phone Size*/
+@media (max-width: 700px){
+  .title {
+    background-color: #c894b2;
+    color: white;
+    padding: 5% 10%;
+    text-align: center;
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+
+  .title-container h1 {
+    line-height: .1em;
+  }
+
+  .title-container img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+  }
+}
+/* Home page title style Phone Size*/
+
+
+/* aboutMe style */
+.aboutMe {
+  padding-bottom: 80px;
+}
+
+.aboutMe h1 {
+  margin-top: 100px;
+  text-align: center;
+  text-decoration: underline;
+}
+/* aboutMe style */
+
+
+/* Skills style Computer size*/
+@media (min-width: 700px){
+  .skills h1 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .skills h3 {
+    text-decoration: underline;
+  }
+
+  .skill-block {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    box-sizing:border-box;
+  }
+
+  .skill-block ul {
+    padding: 0;
+    list-style: none;
+    line-height: 4em;
+  }
+}
+/* Skills style Computer size*/
+
+
+/* Skills style Phone size*/
+@media (max-width: 700px){
+  .skills h1 {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .skills h3 {
+    text-decoration: underline;
+  }
+
+  .skill-block {
+    float: left;
+    width: 50%;
+    height: 550px;
+    text-align: center;
+    padding: 10px;
+    box-sizing:border-box;
+  }
+
+  .skill-block ul {
+    padding: 0;
+    list-style: none;
+    line-height: 4em;
+  }
+}
+/* Skills style Phone size*/
+
+
+/* Contact style */
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  text-decoration: underline;
+}
+
+.contact img {
+  width: 50px;
+  height: 50px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+/* Contact style */
+
+/*****************************************************************************/
+/*Portfolio Style*/
+
+.images h1 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.images img {
+  padding: 5px;
+  width: 30%;
+  height: 33%
+}
