@@ -1,18 +1,5 @@
-body{
+body {
   background-color:#f4f4f4;
-  /*
-  f4f4f4
-  555
-  333
-  0c486c
-  ff9899
-  add8c7
-  8eb2a4
-  fcf7f4
-  edc1da
-  c894b2
-  c76ba0
-  */
   color:#555;
   font-family:Helvetica, Arial, sans-serif;
   font-size:16px;
@@ -33,10 +20,20 @@ h1 {
 }
 
 
+/*
+c894b2
+6cc4d6
+f1f2e6
+c170cb
+d3b1d7
+c1aed5
+c6d5ae
+*/
+
 
 /* Navigation Bar style */
 #navbar {
-  background-color: #c894b2;
+  background-color: #c1aed5;
   color: #fff;
   padding: 0;
   padding-bottom: 0;
@@ -68,16 +65,16 @@ h1 {
 
 
 /* Home page title style Computer Size*/
-@media (min-width: 700px){
+@media (min-width: 700px) {
   .title {
-    background-color: #c894b2;
+    background-color: #c1aed5;
     color: white;
     padding: 5% 10%;
     display:flex;
     align-items: center;
     justify-content:space-between;
-    padding-bottom: 120px;
-    padding-top: 120px;
+    padding-bottom: 130px;
+    padding-top: 130px;
   }
 
   .title-container {
@@ -101,14 +98,14 @@ h1 {
 
 
 /* Home page title style Phone Size*/
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .title {
-    background-color: #c894b2;
+    background-color: #c1aed5;
     color: white;
     padding: 5% 10%;
     text-align: center;
-    padding-bottom: 120px;
-    padding-top: 120px;
+    padding-bottom: 130px;
+    padding-top: 130px;
   }
 
   .title-container h1 {
@@ -141,7 +138,7 @@ h1 {
 
 
 /* Skills style Computer size*/
-@media (min-width: 700px){
+@media (min-width: 700px) {
   .skills h1 {
     text-align: center;
     text-decoration: underline;
@@ -169,7 +166,7 @@ h1 {
 
 
 /* Skills style Phone size*/
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .skills h1 {
     text-align: center;
     text-decoration: underline;
@@ -214,17 +211,43 @@ h1 {
 }
 /* Contact style */
 
+
 /*****************************************************************************/
 /*Portfolio Style*/
 
-.images h1 {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  text-decoration: underline;
-}
+/* Portfolio Computer Style*/
+@media (min-width: 700px) {
+  .images h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    line-height: 40px;
+  }
 
-.images img {
-  padding: 5px;
-  width: 30%;
-  height: 33%
+  .images img {
+    padding: 5px;
+    width: 32%;
+    height: 32%;
+    align-items: center;
+    box-sizing:border-box;
+  }
 }
+/* Portfolio Computer Style*/
+
+
+
+/* Portfolio Phone Style*/
+@media (max-width: 700px) {
+  .images h1 {
+    margin-top: 100px;
+    text-decoration: underline;
+    line-height: 40px;
+  }
+
+  .images img {
+    padding: 5px;
+    width: 45%;
+    height: 33%
+  }
+}
+/* Portfolio Phone Style*/
