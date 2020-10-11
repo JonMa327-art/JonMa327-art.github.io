@@ -1,3 +1,14 @@
+/* Color chooses
+c894b2
+6cc4d6
+f1f2e6
+c170cb
+d3b1d7
+c1aed5
+c6d5ae
+*/
+
+/* Global style */
 body {
   background-color:#f4f4f4;
   color:#555;
@@ -12,23 +23,16 @@ h1 {
   font-size: 30px;
   padding-bottom: 30px;
 }
+/* Global style */
 
+
+/* Container style */
 .container {
   width:90%;
   margin:auto;
   overflow:hidden;
 }
-
-
-/*
-c894b2
-6cc4d6
-f1f2e6
-c170cb
-d3b1d7
-c1aed5
-c6d5ae
-*/
+/* Container style */
 
 
 /* Navigation Bar style */
