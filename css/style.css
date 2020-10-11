@@ -33,7 +33,7 @@ c6d5ae
 
 /* Navigation Bar style */
 #navbar {
-  background-color: #c894b2;
+  background-color: #c1aed5;
   color: #fff;
   padding: 0;
   padding-bottom: 0;
@@ -65,7 +65,7 @@ c6d5ae
 
 
 /* Home page title style Computer Size*/
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .title {
     background-color: #c1aed5;
     color: white;
@@ -98,7 +98,7 @@ c6d5ae
 
 
 /* Home page title style Phone Size*/
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .title {
     background-color: #c1aed5;
     color: white;
@@ -138,7 +138,7 @@ c6d5ae
 
 
 /* Skills style Computer size*/
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .skills h1 {
     text-align: center;
     text-decoration: underline;
@@ -166,7 +166,7 @@ c6d5ae
 
 
 /* Skills style Phone size*/
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .skills h1 {
     text-align: center;
     text-decoration: underline;
@@ -216,7 +216,7 @@ c6d5ae
 /*Portfolio Style*/
 
 /* Portfolio Computer Style*/
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .images h1 {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -237,7 +237,7 @@ c6d5ae
 
 
 /* Portfolio Phone Style*/
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .images h1 {
     margin-top: 100px;
     text-decoration: underline;
