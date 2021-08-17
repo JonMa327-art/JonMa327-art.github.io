@@ -1,133 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Jonathan Ma</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+
+    <style>
+        .hero {
+            width: 95%;
+            max-width: 1450px;
+            height: auto;
+            margin: auto;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .hero__image {}
+
+        .hero__info {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.5em;
+            margin: 0;
+            margin-left: -50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #696969;
+        }
+    </style>
 </head>
+
 <body>
 
+    <!-- navigation -->
+    <div class="logo">JM</div>
 
-
-  <!--Start of Navigation -->
-  <nav id = "navbar">
-    <div class="container">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="https://docs.google.com/gview?url=https://github.com/JonMa327-art/Resume/raw/main/RESUME.pdf&embedded=true" target="_blank">Resume</a></li>
-      </ul>
+    <div class="nav">
+        <div class="nav__logo">JM</div>
+        <ul class="nav__list">
+            <li class="nav__link">
+                <a href="index.html" style="color: #8D54CB; text-decoration: underline;">HOME</a>
+            </li>
+            <li class="nav__link">
+                <a href="WebDesigns.html">WEB DESIGNS</a>
+            </li>
+            <li class="nav__link">
+                <a href="3D.html">3D WORK</a>
+            </li>
+            <li class="nav__link">
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
     </div>
-  </nav>
-  <!--End of Navigation -->
 
-
-
-
-  <!--Start of Title-->
-  <div class="title">
-    <div class="title-container">
-      <h1>Hello Friends,</h1>
-      <h1>It's Jonathan</h1>
-      <p>I'm an aspiring software engineer and illustrator currently living in the Greater Boston Area.</p>
+    <!-- hero -->
+    <div class="hero">
+        <div class="hero__image">
+            <img src="images/portrait.png" alt="">
+        </div>
+        <div class="hero__info">
+            <p>My name is Jonathan Ma and I create stunning 3D models and unforgettable UI/UX experiences.</p>
+        </div>
     </div>
-    <div class="title-container">
-      <img src="images/me.JPG" alt="JonathanMa">
+
+    <!-- Projects -->
+    <div class="projects__backgroundTop" style="background-image: url(images/purpleWaveTop.svg);"></div>
+    <div class="projects__background">
+        <div class="projects">
+            <h2 class="projects__title">Featured <span class="projects__title highlight">Projects</span></h2>
+            <div class="projects__container">
+                <div class="projects__models">
+                    <img src="images/KitchenRender.jpg" alt="">
+                    <img src="images/GunRender.jpg" alt="">
+                    <a href="3D.html"><button class="projects__button">See My 3D Work!</button></a>
+                </div>
+                <div class="projects__designs">
+                    <img src="images/SchdularPreview.png" alt="">
+                    <a href="WebDesigns.html"><button class="projects__button">See My Web Designs</button></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <!--End of Title -->
+    <div class="projects__backgroundBottom" style="background-image: url(images/purpleWaveBottom.svg);"></div>
 
-
-
-
-  <!--Start of About me-->
-  <div class="container">
-    <div class="aboutMe">
-      <h1>About me</h1>
-      <p>Welcome! Thanks for stopping by. I am an undergrad at Northeastern University currently working towards my Bachelor's degree in Computer Science and Media Art. When I have time, some things I love to do are illustrating, cooking, playing video games and spending time with others. Feel free to contact me at <strong>ma.jo@northeastern.edu</strong> or with the links below.</p>
-    </div>
-  </div>
-  <!--End of About me-->
-
-
-
-
-  <!--Start of Skills-->
-  <div class="container">
+    <!-- skills -->
+    <h2 class="skills__title">What I'm Good At!</h2>
     <div class="skills">
-      <h1>Skills</h1>
-      <div class="skill-block">
-        <h3>Languages</h3>
-        <div class="languages">
-          <ul>
-            <li>Java</li>
-            <li>C++</li>
-            <li>SQL</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>C#</li>
-            <li>Racket</li>
-          </ul>
+        <div class="skills__card">
+            <div class="skills__icon">
+                <img src="images/Ps.svg" alt="">
+            </div>
+            <h2 class="skills__name">Photoshop</h2>
         </div>
-      </div>
-      <div class="skill-block">
-        <h3>IDE</h3>
-        <div class="ide">
-          <ul>
-            <li>Atom</li>
-            <li>Intellij</li>
-            <li>Visual Studio Code</li>
-            <li>Eclipse</li>
-            <li>Visual Studio</li>
-          </ul>
+        <div class="skills__card">
+            <div class="skills__icon">
+                <img src="images/Ps.svg" alt="">
+            </div>
+            <h2 class="skills__name">Illustrator</h2>
         </div>
-      </div>
-      <div class="skill-block">
-        <h3>Art</h3>
-        <div class="art">
-          <ul>
-            <li>Clip Studio Paint</li>
-            <li>Photoshop</li>
-            <li>After Effects</li>
-            <li>Audacity</li>
-            <li>Maya</li>
-          </ul>
+        <div class="skills__card">
+            <div class="skills__icon">
+                <img src="images/Ps.svg" alt="">
+            </div>
+            <h2 class="skills__name">Adobe XD</h2>
         </div>
-      </div>
-      <div class="skill-block">
-        <h3>Others</h3>
-        <div class="others">
-          <ul>
-            <li>Unity</li>
-            <li>Git</li>
-            <li>MySQL</li>
-            <li>Looker</li>
-            <li>Matillion</li>
-            <li>AWS Redshift</li>
-          </ul>
+
+        <div class="skills__card">
+            <div class="skills__icon">
+                <img src="images/Ps.svg" alt="">
+            </div>
+            <h2 class="skills__name">Clip Studio Paint</h2>
         </div>
-      </div>
+        <div class="skills__card">
+            <div class="skills__icon">
+                <img src="images/Ps.svg" alt="">
+            </div>
+            <h2 class="skills__name">Maya</h2>
+        </div>
+        <div class="skills__card">
+            <div class="skills__icon">
+                <img src="images/Ps.svg" alt="">
+            </div>
+            <h2 class="skills__name">HTML</h2>
+        </div>
+        <div class="skills__card">
+            <div class="skills__icon">
+                <img src="images/Ps.svg" alt="">
+            </div>
+            <h2 class="skills__name">CSS</h2>
+        </div>
+        <div class="skills__card">
+            <div class="skills__icon">
+                <img src="images/Ps.svg" alt="">
+            </div>
+            <h2 class="skills__name">Java</h2>
+        </div>
+        <div class="skills__card">
+            <div class="skills__icon">
+                <img src="images/Ps.svg" alt="">
+            </div>
+            <h2 class="skills__name">C++</h2>
+        </div>
     </div>
-  </div>
-  <!--End of Skills-->
-
-
-
-
-  <!-- Start of Contact -->
-  <div class="container">
-    <div class="contact">
-      <h1> Contact </h1>
-      <a href="https://www.linkedin.com/in/jonathan-ma327/" target="_blank">
-        <img alt="linkedIn" src="images/LinkedIn.png">
-      </a>
-      <a href="https://github.com/JonMa327-art" target="_blank">
-        <img alt="Github" src="images/Github.png">
-      </a>
     </div>
-  </div>
-  <!-- end of Contact -->
 
+    <!-- about me -->
+    <div class="about">
+        <div class="about__headshot">
+            <!-- <img src="images/HeadshotBlob.svg" alt="" class="about__headshotBlob"> -->
+            <img src="images/JonathanMa2.png" alt="">
+        </div>
+
+        <div class="about__info">
+            <p class="about__title">Need 3D Models?<br>
+                Want Creative Web Designs?<br>
+                <span class="about__title highlight">I’m Your Guy!</span>
+            </p>
+            <p class="about__discription">I’m a UI/UX Designer and a 3D modeler that loves to create. I’ve always
+                believe
+                that in order to make something new and meaningful is to love the process and to share that with others.
+                Design and art are wherever you look, and creating something that you know has made an impact is what
+                makes
+                me love what I do. If you wanna learn more about me, contact me by clicking the button below. Hope to
+                hear
+                from you soon!</p>
+            <a href="contact.html"><button class="about__button">Hire Me!</button></a>
+        </div>
+    </div>
 
 
 </body>
+
 </html>
