@@ -15,6 +15,7 @@
             background-image: url("images/WizardSceneRender.jpg");
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -40,6 +41,7 @@
 
         .contact input {
             width: 50%;
+            min-width: 300px;
             margin: 10px 0 50px;
             padding: 8px 10px;
             border-radius: 5px;
@@ -57,6 +59,7 @@
 
         .contact textarea {
             width: 50%;
+            min-width: 300px;
             height: 200px;
             margin: 10px 0 50px;
             padding: 8px 10px;
@@ -83,6 +86,37 @@
             border: 0;
             color: #EFEFEF;
             background-color: #CE1C70;
+        }
+
+        @media only screen and (max-width:1024px) {
+            .contact input {
+                font-size: 16px;
+            }
+
+            .contact textarea {
+                font-size: 16px;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+
+            .contact h2 {
+                font-size: 18px;
+            }
+
+            .contact input {
+                font-size: 12px;
+                margin-bottom: 25px;
+            }
+
+            .contact textarea {
+                height: 150px;
+                font-size: 12px;
+            }
+
+            .contact button {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
@@ -112,21 +146,17 @@
 
     <div class="contact__background">
         <form class="contact" action="https://formsubmit.co/ratherbejon@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://jonathanma1.com/ThankYou.html">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New submission!">
             <h2>Email</h2>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
             <h2>Message</h2>
-            <input type="text" name="message">
-            <!-- <textarea name="message"></textarea> -->
+            <textarea type="text" name="message" required></textarea>
             <button type="submit">Send</button>
 
         </form>
     </div>
-
-    <!-- <form action="https://formsubmit.co/your@email.com" method="POST">
-        <input type="text" name="name" required>
-        <input type="email" name="email" required>
-        <button type="submit">Send</button>
-    </form> -->
 </body>
 
 </html>
