@@ -7,6 +7,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+        .contact__background {
+            width: 100%;
+            height: 100vh;
+            background-image: url("images/WizardSceneRender.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact {
+            width: 95%;
+            max-width: 1450px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0px;
+            color: #EFEFEF;
+        }
+
+        .contact input {
+            width: 50%;
+            margin: 10px 0 50px;
+            padding: 8px 10px;
+            border-radius: 5px;
+            border: 0;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #696969;
+        }
+
+        .contact input:focus {
+            outline: none;
+            border: 2px solid #516DC9;
+        }
+
+        .contact textarea {
+            width: 50%;
+            height: 200px;
+            margin: 10px 0 50px;
+            padding: 8px 10px;
+            border-radius: 5px;
+            border: 0;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            line-height: 1.5em;
+            resize: none;
+            color: #696969;
+        }
+
+        .contact textarea:focus {
+            outline: none;
+            border: 2px solid #516DC9;
+        }
+
+        .contact button {
+            font-size: 22px;
+            font-weight: 500;
+            padding: 5px 35px;
+            border-radius: 5px;
+            border: 0;
+            color: #EFEFEF;
+            background-color: #CE1C70;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,6 +108,21 @@
                 <li class="nav__linkActive">CONTACT</li>
             </a>
         </ul>
+    </div>
+
+    <div class="contact__background">
+        <form class="contact" action="contactform.php" method="post">
+            <h2>Name</h2>
+            <input type="text" name="name" placeholder="name">
+            <h2>Email</h2>
+            <input type="text" name="email" placeholder="email">
+            <h2>Subject</h2>
+            <input type="text" name="subject" placeholder="subject">
+            <h2>Message</h2>
+            <textarea name="message" placeholder="message"></textarea>
+            <button type="submit" name="submit">Send</button>
+
+        </form>
     </div>
 </body>
 
