@@ -41,21 +41,62 @@ body {
     margin: 0;
 }
 
-.nav__link {
-    display: inline;
-    padding: 0 40px;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.nav__link a {
+.nav__list a {
     text-decoration: none;
+    position: relative;
     color: #696969;
 }
 
-.nav__link a:hover {
-    text-decoration: underline;
+.nav__list a:hover {
     color: #8D54CB;
+}
+
+
+.nav__link {
+    display: inline;
+    position: relative;
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav__link::after {
+    content: '';
+    width: calc(100% - 40px);
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 20px;
+    border-radius: 20px;
+    transform-origin: center;
+    transition: transform 250ms ease-in-out;
+    transform: scaleX(0);
+    background-color: #8D54CB;
+}
+
+.nav__link:hover::after {
+    transform: scaleY(1);
+}
+
+.nav__linkActive {
+    display: inline;
+    position: relative;
+    padding: 0 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav__linkActive::after {
+    content: '';
+    width: calc(100% - 40px);
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 20px;
+    border-radius: 20px;
+    background-color: #8D54CB;
 }
 
 .logo {
@@ -72,6 +113,22 @@ body {
     .nav__link {
         padding: 0 20px;
     }
+
+    .nav__link::after {
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+
+    .nav__linkActive {
+        padding: 0 20px;
+    }
+
+    .nav__linkActive::after {
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+
+    
 }
 
 @media only screen and (max-width:768px) {
@@ -99,6 +156,24 @@ body {
         display: inline;
         padding: 0 10px;
         font-size: 12px;
+    }
+
+    .nav__link::after {
+        width: calc(100% - 10px);
+        height: 2px;
+        left: 5px;
+    }
+
+    .nav__linkActive {
+        display: inline;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .nav__linkActive::after {
+        width: calc(100% - 10px);
+        height: 2px;
+        left: 5px;
     }
 
     .nav__link a {
@@ -466,10 +541,6 @@ body {
         margin-bottom: 10px;
     }
 
-    .projects__designs {
-        margin-top: 30px;
-    }
-
     .projects__designs img {
         margin-bottom: 10px;
     }
@@ -515,6 +586,7 @@ body {
         width: 100%;
         height: auto;
         padding: 0;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -805,7 +877,7 @@ body {
     margin-bottom: 15px;
     font-size: 23px;
     font-weight: 300;
-    line-height: 1.5em;
+    line-height: 1.8em;
     color: #696969;
 }
 
