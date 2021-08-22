@@ -1110,6 +1110,7 @@ body {
     padding: 5px 35px;
     border-radius: 5px;
     border: 0;
+    cursor: pointer;
     color: #EFEFEF;
     background-color: #CE1C70;
 }

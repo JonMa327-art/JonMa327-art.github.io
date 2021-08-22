@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitchen Model</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/modelSlides.css">
     <style>
-        .slideshow {
+        /* .slideshow {
             width: 95%;
             max-width: 1450px;
             position: relative;
@@ -114,7 +115,7 @@
 
             .prev:hover,
             .next:hover {
-                background-color: rgba(0, 0, 0, 0.8);
+                background-color: none;
             }
 
             .slideshow__carousel::-webkit-scrollbar {
@@ -138,10 +139,6 @@
             .slideshow__carousel {
                 margin-top: 10px;
                 margin-bottom: 40px;
-            }
-
-            .slideshow__carousel::-webkit-scrollbar {
-                height: 8px;
             }
 
             .slideshow__button {
@@ -190,9 +187,9 @@
             }
 
             .modelInfo p {
-                font-size: 18px;
+                font-size: 16px;
             }
-        }
+        } */
     </style>
 </head>
 
@@ -279,52 +276,8 @@
     </div>
 </body>
 
-
-<script>
-    //just runs at the beginning
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        //i is just an int
-        var i;
-        //These are arrays
-        var slides = document.getElementsByClassName("slideshow__slide");
-        var buttons = document.getElementsByClassName("slideshow__button");
-
-        //takes care of the wrapping issue
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-
-        //turns all of the displays off
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-
-        //changes all of the dot colors to light grey
-        for (i = 0; i < buttons.length; i++) {
-            buttons[i].className = buttons[i].className.replace(" active", "");
-        }
-
-        //shows to correct image and show which dot to hover over
-        slides[slideIndex - 1].style.display = "block";
-        buttons[slideIndex - 1].className += " active";
-    }
-</script>
+<footer>
+    <script src="javascript/models.js"></script>
+</footer>
 
 </html>
