@@ -1,0 +1,134 @@
+/* contact */
+.contact__background {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/WizardSceneRender.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    width: 95%;
+    max-width: 1450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0px;
+    color: #EFEFEF;
+}
+
+.contact input {
+    width: 50%;
+    min-width: 300px;
+    margin: 10px 0 50px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #696969;
+}
+
+.contact input:focus {
+    outline: none;
+    border: 2px solid #516DC9;
+}
+
+.contact textarea {
+    width: 50%;
+    min-width: 300px;
+    height: 200px;
+    margin: 10px 0 50px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+    resize: none;
+    color: #696969;
+}
+
+.contact textarea:focus {
+    outline: none;
+    border: 2px solid #516DC9;
+}
+
+.contact button {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 35px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: #EFEFEF;
+    background-color: #CE1C70;
+}
+
+@media only screen and (max-width:1024px) {
+    .contact input {
+        font-size: 16px;
+    }
+
+    .contact textarea {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .contact h2 {
+        font-size: 18px;
+    }
+
+    .contact input {
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .contact textarea {
+        height: 150px;
+        font-size: 12px;
+    }
+
+    .contact button {
+        font-size: 18px;
+    }
+}
+
+
+/* Thank You */
+.thanks {
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: #EFEFEF;
+}
+
+@media only screen and (max-width:1024px) {
+    .thanks {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .thanks {
+        font-size: 40px;
+    }
+}
