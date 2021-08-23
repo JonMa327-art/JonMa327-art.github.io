@@ -2,7 +2,7 @@
 .contact__background {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/WizardSceneRender.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/Wizard/WizardSceneRender.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

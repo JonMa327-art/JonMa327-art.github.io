@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gun Model</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/modelSlides.css">
+
+    <style>
+        .video__container {
+            width: 95%;
+            max-width: 1450px;
+            max-height: 700px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .video {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            padding-top: 50%;
+            /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: 0px;
+            border-radius: 10px;
+        }
+
+        @media only screen and (max-width:768px) {
+            .video__container {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+
+            .video iframe {
+                border-radius: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="logo">JM</div>
+
+
+    <div class="nav">
+        <div class="nav__logo">JM</div>
+        <ul class="nav__list">
+            <a href="index.html">
+                <li class="nav__link">HOME</li>
+            </a>
+            <a href="WebDesigns.html">
+                <li class="nav__link">WEB DESIGNS</li>
+            </a>
+            <a href="3D.html">
+                <li class="nav__linkActive">3D MODELS</li>
+            </a>
+
+            <a href="contact.html">
+                <li class="nav__link">CONTACT</li>
+            </a>
+        </ul>
+    </div>
+
+
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="slideshow__slide">
+            <img src="images/Gun/GunRender.jpg">
+        </div>
+        <div class="slideshow__slide">
+            <img src="images/Gun/GunRenderOcclusion.jpg">
+        </div>
+        <div class="slideshow__slide">
+            <img src="images/Gun/GunRenderWireframe.jpg">
+        </div>
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="slideshow__carousel">
+        <img src="images/Gun/GunRender.jpg" onclick="currentSlide(1)" class="slideshow__button">
+        <img src="images/Gun/GunRenderOcclusion.jpg" onclick="currentSlide(2)" class="slideshow__button">
+        <img src="images/Gun/GunRenderWireframe.jpg" onclick="currentSlide(3)" class="slideshow__button">
+    </div>
+
+    <div class="video__container">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/gMH-6bkMNTE" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+
+
+    <div class="modelInfo">
+        <h2>About</h2>
+        <p></p>
+    </div>
+</body>
+
+<footer>
+    <script src="javascript/models.js"></script>
+</footer>
+
+</html>
