@@ -13,12 +13,12 @@
 .nav__logo {
     position: absolute;
     left: 0;
-    top: 40%;
-    font-size: 28px;
-    font-weight: 700;
-    color: #696969;
+    top: 0%;
 }
 
+.nav__logo img {
+    width: 38%;
+}
 .nav__list {
     list-style: none;
     padding: 40px 0;
@@ -169,15 +169,20 @@
 
     .logo {
         width: 95%;
-        height: 60px;
+        height: 70px;
         margin: auto;
         visibility: visible;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: 28px;
-        font-weight: 700;
-        color: #696969;
+    }
+
+    .logo a {
+        height: 100%;
+    }
+
+    .nav__smallImage {
+        height: 100%;
     }
 }

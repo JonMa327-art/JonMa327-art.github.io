@@ -148,6 +148,10 @@
         padding: 60px 0;
     }
 
+    .first{
+        padding: 20px 0 60px;
+    }
+
     .design__info {
         width: 100%;
         text-align: center;
