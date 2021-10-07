@@ -15,24 +15,101 @@
             max-width: 1450px;
             height: auto;
             margin: auto;
-            margin-bottom: 50px;
+            margin-top: 100px;
+            margin-bottom: 100px;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
+            position: relative;
         }
 
-        .hero__image {}
+        .hero h2 {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 450px;
+            font-weight: 500;
+            padding: 0;
+            margin: 0;
+            line-height: .95em;
+            opacity: .04;
+            color: #F8F8F8;
+        }
+
+        .hero__image {
+            height: 400px;
+        }
+
+        .hero__image img {
+            height: 100%;
+        }
 
         .hero__info {
-            font-size: 40px;
-            font-weight: 600;
-            line-height: 1.5em;
-            margin: 0;
-            margin-left: -50px;
+            width: 100%;
+            padding: 0px 20px;
+            border-radius: 0px 10px 10px 0px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            color: #696969;
+            background-image: linear-gradient(to top right, #516DC9, #8D54CB);
+        }
+
+        .hero__info p {
+            font-size: 50px;
+            font-weight: 500;
+            color: #F8F8F8;
+            line-height: 1.4em;
+        }
+
+        @media only screen and (max-width:1024px) {
+            .hero {
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+
+            .hero h2 {
+                font-size: 350px;
+                line-height: .90em;
+            }
+
+            .hero__image {
+                height: 300px;
+            }
+
+            .hero__info p {
+                font-size: 32px;
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .hero {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 80px;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .hero h2 {
+                font-size: 0px;
+            }
+
+            .hero__image {
+                height: 250px;
+            }
+
+            .hero__info {
+                width: 100%;
+                text-align: center;
+                padding: 0px;
+                border-radius: 0px;
+                display: block;
+            }
+
+            .hero__info p {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -70,14 +147,15 @@
     </div>
 
     <!-- hero -->
-    <!-- <div class="hero">
+    <div class="hero">
         <div class="hero__image">
-            <img src="images/portrait.png" alt="">
+            <img src="images/JonSquare.png" alt="">
         </div>
         <div class="hero__info">
-            <p>My name is Jonathan Ma and I create stunning 3D models and unforgettable UI/UX experiences.</p>
+            <p>Welcome! My name is Jonathan Ma and I create stunning 3D models.</p>
         </div>
-    </div> -->
+        <h2>3D</h2>
+    </div>
 
     <!-- Projects -->
     <div class="projects__backgroundTop" style="background-image: url(images/BlueWaveTop.svg);"></div>
