@@ -44,14 +44,22 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
+
 .projects__models {
-    width: 50%;
+    width: 100%;
     height: auto;
-    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projects__models a {
+    width: 49%;
+    /* padding: 0 10px; */
 }
 
 .projects__models img {
@@ -64,7 +72,7 @@
 .projects__designs {
     width: 50%;
     height: auto;
-    padding-left: 1%;
+    /* padding-left: 1%; */
 }
 
 .projects__designs img {
@@ -74,7 +82,16 @@
     box-shadow: 1px 4px 6px rgb(0 0 0 / 0.16);
 }
 
-.projects__button {
+
+.project__button__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project__button__container a{
+    width: 170px;
     margin-top: 20px;
     padding: 5px 30px;
     border-radius: 10px;
@@ -83,6 +100,7 @@
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     box-shadow: 1px 2px 4px rgb(0 0 0 / 0.16);
     color: #516DC9;
@@ -130,6 +148,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .projects__models a {
+        padding: 0px;
+    }
+
+    .projects__models a {
+        width: 100%;
     }
 
     .projects__models img {
@@ -190,7 +216,7 @@
     left: calc(50% - 260px);
     width: 50px;
     height: 3px;
-    background-color: #516DC9;
+    background-color: #96A4D3;
 }
 
 .skills__title::after {
@@ -200,7 +226,7 @@
     right: calc(50% - 260px);
     width: 50px;
     height: 3px;
-    background-color: #516DC9;
+    background-color: #96A4D3;
 }
 
 .skills__card {
@@ -225,22 +251,22 @@
     z-index: -10;
     top: -15px;
     border-radius: 25px 25px 0 0;
-    background-color: #D57CA6;
+    background-color: #8D54CB;
 }
 
 .skills__card:nth-child(2):before {
-    background-color: #96A4D3;
+    background-color: #516DC9;
 }
 
 .skills__card:nth-child(3):before {
-    background-color: #B598D5;
+    background-color: #D57CA6;
 }
 
 .skills__icon {
     width: 100px;
+    height: 84px;
     margin: auto;
     margin-top: 35px;
-    height: auto;
 }
 
 .skills__icon img {
@@ -354,13 +380,13 @@
     }
 
     .skills__title::before {
-        width: 25px;
-        left: calc(50% - 135px);
+        width: 0px;
+        left: calc(50% - 130px);
     }
 
     .skills__title::after {
-        width: 25px;
-        right: calc(50% - 135px);
+        width: 0px;
+        right: calc(50% - 130px);
     }
 
     .skills__card {
