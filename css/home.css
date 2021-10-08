@@ -294,6 +294,12 @@
     color: #F8F8F8;
 }
 
+.skills__list a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #F8F8F8;
+}
+
 .skills__list li {
     margin: 15px 0 20px;
     border-radius: 25px;
@@ -363,6 +369,11 @@
     .skills__list li {
         margin: 8px 10px;
         padding: 10px 20px;
+        float: left;
+        border-radius: 25px;
+    }
+
+    .skills__list a {
         float: left;
         border-radius: 25px;
     }
